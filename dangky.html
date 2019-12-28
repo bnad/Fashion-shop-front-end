@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="dangky.css">
+    <title>Login</title>
+    <script type="text/javascript">
+      function check() {
+        var u = document.getElementById("user");
+        var p = document.getElementById("pass");
+        var p2 = document.getElementById("pass2");
+        var ph = document.getElementById("phone");
+        var e = document.getElementById("email");
+        var a1 = document.getElementById("1");
+        var a2 = document.getElementById("2");
+        var a3 = document.getElementById("3");
+        var a4 = document.getElementById("4");
+        var a5 = document.getElementById("5");
+        var check = true;
+        var mau1=/[\w]/;
+        var mau2=/\d/;
+        if (u.value.length==0 || mau1.test(u.value)==false) {
+          a1.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          a1.style.border="1px solid #55efc4";
+        }
+        if (p.value.length==0 || mau1.test(p.value)==false) {
+          a2.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          a2.style.border="1px solid #55efc4";
+        }
+        if (p2.value!=p.value || p2.value.length==0) {
+          a3.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          a3.style.border="1px solid #55efc4";
+        }
+        if (ph.value.length==0 || mau2.test(ph.value)==false) {
+          a4.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          a4.style.border="1px solid #55efc4";
+        }
+        var mau3=/^[a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/;
+        if (mau3.test(e.value)==false) {
+          a5.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          a5.style.border="1px solid #55efc4";
+        }
+        if (check==true) {
+          window.alert("Đăng ký thành công!! Bây giờ bạn có thể mua hàng.")
+          window.location = 'project.html';
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1><a href="project.html">A. Z Y</a></h1>
+    </div>
+    <div class="signin">
+      <h1>Đăng ký</h1>
+      <div class="textbox" id="1">
+          <input id="user" type="text" placeholder="Tên đăng nhập"  value="">
+      </div>
+      <div class="textbox" id="2">
+        <input id="pass" type="password" placeholder="Mật khẩu"  value="">
+      </div>
+      <div class="textbox" id="3">
+        <input type="password" placeholder="xác nhận mật khẩu" id="pass2" value="">
+      </div>
+      <div class="textbox" id="4">
+        <input type="text" placeholder="Số điện thoại" id="phone" value="">
+      </div>
+      <div class="textbox" id="5">
+        <input type="text" placeholder="Email của bạn" id="email" value="">
+      </div>
+      <select class="date">
+        <script type="text/javascript">
+          for(var i=1;i<31;i++)
+            document.write("<option>" + i + "</option>");
+        </script>
+
+      </select>
+      <select class="date">
+        <script type="text/javascript">
+          var i= 1;
+          while (i<=12)
+          {
+            document.write("<option>" + i + "</option>");
+            i++;
+          }
+        </script>
+      </select>
+      <select class="date">
+        <script type="text/javascript">
+          var i = 1950;
+          do {
+            document.write("<option>" + i + "</option>");
+            i++;
+          }
+          while (i <= 2018);
+        </script>
+      </select>
+      <div class="choose">
+        Giới tính: &nbsp;
+        nam: <input type="radio" checked="checked" name="sex" value=""> &nbsp; &nbsp;
+        nữ: <input type="radio" name="sex" value="">&nbsp; &nbsp;
+      </div>
+      <input onclick="check()" class="btn" type="button" name="" value="Đăng ký">
+    </div>
+  </body>
+</html>

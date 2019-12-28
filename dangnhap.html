@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="dangnhap.css">
+    <script type="text/javascript">
+      function check() {
+        var u = document.getElementById("user");
+        var p = document.getElementById("pass");
+        var a1 = document.getElementById("1");
+        var a2 = document.getElementById("2");
+        check1 = true;
+        var mau1=/[\w]/;
+        if (u.value.length==0 || mau1.test(u.value)==false) {
+          a1.style.border="1px solid red";
+          check1 = false;
+        }
+        else {
+          a1.style.border="none";
+          a1.style.borderBottom="1px solid #55efc4";
+        }
+        if (p.value.length==0 || mau1.test(p.value)==false) {
+          a2.style.border="1px solid red";
+          check1 = false;
+        }
+        else {
+          a2.style.border="none";
+          a2.style.borderBottom="1px solid #55efc4";
+        }
+        if (check1==true) {
+          window.alert("Đăng nhập thành công.");
+          window.location = 'project.html';
+        }
+      }
+    </script>
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="logo">
+      <h1><a href="project.html">A. Z Y</a></h1>
+    </div>
+    <div class="login">
+      <h1>Đăng nhập</h1>
+      <div id="1" class="textbox">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Username" id="user" value="">
+      </div>
+      <div id="2" class="textbox">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="password" id="pass" value="">
+      </div>
+      <input class="btn" type="button" onclick="check()" value="Đăng nhập">
+    </div>
+  </body>
+</html>

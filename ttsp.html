@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Montserrat|Raleway|Righteous|Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="ttsp.css">
+    <title>Thông tin sản phẩm</title>
+    <script type="text/javascript">
+
+      function changeimg(image) {
+        var container = document.getElementById("image-container");
+        container.src = image.src;
+      }
+      function thongbao() {
+        window.alert("Mua thành công. Mời bạn chọn sản phẩm khác")
+      }
+
+    </script>
+  </head>
+  <body>
+    <a href="banchay.html" id="out">X</a>
+    <div class="card">
+      <div class="top-section">
+        <img src="combo5.jpg" id="image-container" alt="">
+        <div class="nav">
+          <img onclick="changeimg(this)" src="combo5.jpg" alt="">
+          <img onclick="changeimg(this)" src="combo1.jpg" alt="">
+          <img onclick="changeimg(this)" src="combo2.jpg" alt="">
+          <img onclick="changeimg(this)" src="combo3.jpg" alt="">
+          <img onclick="changeimg(this)" src="combo4.jpg" alt="">
+        </div>
+        <div class="price">
+          6.990.000 VND
+        </div>
+      </div>
+    </div>
+    <div class="product-info">
+      <h1>bộ comple nam</h1> <br>
+      <h2>màu đen</h2> <br>
+      <p>Nơ bướm cỡ lớn vải lụa, màu trơn, cố định bằng móc gài, có dây đai để điều chỉnh.</p> <br>
+      <p>Áo khoác blazer cổ tuxedo bằng vải sa tanh khác màu. Có túi có nắp hai bên và một túi ngực. Cài trước bằng khuy.</p> <br>
+      <p>Áo gi lêvạt đắp chéo, cổ tròn xẻ sâu phía trước. Cài khuy bọc vải.</p> <br>
+      <h3>size</h3> <br>
+      <a href="#" id="size">M</a>
+      <a href="#" id="size">L</a>
+      <a href="#" id="size">S</a>
+      <a href="#" id="size">XL</a>  
+    </div>
+
+    <a href="#" onclick="thongbao()" class="btn">Add to card <i class="fas fa-shopping-cart"></i></a>
+  </body>
+</html>

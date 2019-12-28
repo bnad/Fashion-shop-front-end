@@ -1,0 +1,99 @@
+*,html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+body {
+  background-image: url(xx.jpg);
+  background-size: cover;
+}
+.logo {
+  word-spacing: 10px;
+  position: absolute;
+  left: 70px;
+  top: 30px;
+}
+.logo a {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 1.4em;
+}
+.signin {
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+.signin h1 {
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #55efc4;
+  margin-bottom: 50px;
+  padding: 13px 0;
+  font-family: 'Roboto Slab', serif;
+}
+.textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #55efc4;
+  border-radius: 20px;
+  background-color: white;
+}
+.textbox input {
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  font-size: 15px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+.date {
+  background-color: white;
+  width: 70px;
+  font-size: 15px;
+  margin: 0 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: black;
+  border-radius: 10px;
+  outline: none;
+}
+.choose {
+  width: 100%;
+  overflow: hidden;
+  font-size: 15px;
+  color: black;
+  padding: 8px 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #55efc4;
+  border-radius: 20px;
+  background-color: white;
+}
+.choose input {
+  position: absolute;
+  top: 417px;
+}
+.btn {
+  width: 100%;
+  background-color: white;
+  border: 2px solid #55efc4;
+  color: black;
+  padding: 5px;
+  font-size: 18px;
+  margin: 12px 0;
+  font-family: 'Mali', cursive;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+}

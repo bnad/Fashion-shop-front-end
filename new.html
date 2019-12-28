@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="new.css">
+    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>sản phẩm mới</title>
+    <script type="text/javascript">
+    var id;
+      function backtotop() {
+        var y=window.pageYOffset;
+        y=y-70;
+        if(y<=0)
+        {
+          window.clearInterval(id);
+        }
+        window.scrollTo(0,y);
+
+      }
+      function hengio() {
+        id=window.setInterval(backtotop,10);
+      }
+    function chuyenkieu() {
+      if(window.pageYOffset>=100) {
+        var menu=document.getElementById("topbtn");
+        menu.setAttribute("class","kieu2");
+      }
+      else {
+        var menu=document.getElementById("topbtn");
+        menu.setAttribute("class","kieu1");
+      }
+    }
+    function show(s) {
+        var n1=document.querySelectorAll("#nhom1");
+        var n2=document.querySelectorAll("#nhom2");
+        var n3=document.querySelectorAll("#nhom3");
+        var n4=document.querySelectorAll("#nhom4");
+        if(s.search("ao")>=0)
+        {
+          console.log("Hien ao")
+          n2.forEach(function(element){
+            console.log(element)
+            element.style.display="none";})
+
+          n3.forEach(function(element){
+            console.log(element)
+            element.style.display="none";
+          })
+
+          n4.forEach(function(element){
+            console.log(element)
+            element.style.display="none";
+        })
+        n1.forEach(function(element){
+          console.log(element)
+          element.style.display="block";
+      })
+      }
+        if(s.search("mu")>=0)
+        {
+          n1.forEach(function(element){
+            console.log(element)
+            element.style.display="none"; })
+          n3.forEach(function(element){
+            console.log(element)
+            element.style.display="none";
+          })
+          n4.forEach(function(element){
+            console.log(element)
+            element.style.display="none";
+        })
+        n2.forEach(function(element){
+          console.log(element)
+          element.style.display="block";
+      })
+      }
+      if(s.search("tui")>=0)
+      {
+        n1.forEach(function(element){
+          console.log(element)
+          element.style.display="none"; })
+        n4.forEach(function(element){
+          console.log(element)
+          element.style.display="none";
+        })
+        n2.forEach(function(element){
+          console.log(element)
+          element.style.display="none";
+      })
+      n3.forEach(function(element){
+        console.log(element)
+        element.style.display="block";
+    })
+    }
+    if(s.search("giay")>=0)
+    {
+      n1.forEach(function(element){
+        console.log(element)
+        element.style.display="none"; })
+      n3.forEach(function(element){
+        console.log(element)
+        element.style.display="none";
+      })
+      n2.forEach(function(element){
+        console.log(element)
+        element.style.display="none";
+    })
+    n4.forEach(function(element){
+      console.log(element)
+      element.style.display="block";
+  })
+  }
+    }
+    </script>
+  </head>
+  <body onscroll="chuyenkieu()">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="project.html">A. Z Y</a></h1>
+      </div>
+      <div class="center">
+        <p>tìm kiếm</p>
+        <input type="text" onkeyup="show(this.value)">
+      </div>
+      <div class="user">
+          <a href="dangnhap.html" class="headright">Đăng nhập</a>
+          <a href="contact.html" class="headright">Liên hệ</a>
+          <a href="buy.html" class="headright"><i class="fas fa-shopping-cart"></i>(0)</a>
+      </div>
+    </div>
+    <div class="middle">
+      <ul>
+        <li> <a href="new.html" id="new1">mới <i class="fas fa-caret-left"></i> </a> </li>
+        <li> <a href="banchay.html" id="product">bán chạy</a> </li>
+        <li> <a href="nam.html" id="product">nam</a> </li>
+        <li> <a href="nu.html" id="product">nữ</a> </li>
+        <li> <a href="phukien.html" id="product">phụ kiện</a> </li>
+        <li> <a href="giay.html" id="product">Giày</a> </li>
+      </ul>
+    </div>
+    <div class="sanph">
+      <div id="nhom1" class="hinh1">
+        <a href="#">
+          <img src="4.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo len cổ cao</p></a>
+        <p>2.099.000 VND</p>
+      </div>
+      <div class="hinh2" id="nhom1">
+        <a href="#">
+          <img src="6.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo khoác phao</p></a>
+        <p>4.599.000 VND</p>
+      </div>
+      <div class="hinh31" id="nhom1">
+        <a href="#">
+          <img src="31.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo phông túi trước</p></a>
+        <p>3.099.000 VND</p>
+      </div>
+      <div class="hinh4" id="nhom1">
+        <a href="#">
+          <img src="5.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo sơ mi họa tiết</p></a>
+        <p>5.599.000 VND</p>
+      </div>
+      <div id="nhom2" class="hinh5">
+        <a href="#">
+          <img src="11.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>mũ da</p></a>
+        <p>3.299.000 VND</p>
+      </div>
+      <div id="nhom1" class="hinh3">
+        <a href="#">
+          <img src="24.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo phông thriller</p></a>
+        <p>2.099.000 VND</p>
+      </div>
+      <div id="nhom1" class="hinh4">
+        <a href="#">
+          <img src="25.jpg" alt="">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo khoác jean</p></a>
+        <p>5.099.000 VND</p>
+      </div>
+      <div id="nhom1" class="hinh2">
+        <a href="#">
+          <img src="32.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo khoác kaki</p></a>
+        <p>4.599.000 VND</p>
+      </div>
+      <div class="hinh6" id="nhom3">
+        <a href="#"><img src="43.jpg"></a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>túi đeo chéo vàng</p></a>
+        <p>2.400.000 VND</p>
+      </div>
+      <div class="hinh7" id="nhom3">
+        <a href="#"><img src="42.jpg"></a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>túi đeo chéo nâu</p></a>
+        <p>2.400.000 VND</p>
+      </div>
+      <div id="nhom4"class="hinh8">
+        <a href="#"><img src="34.jpg"></a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>giày đế cao</p></a>
+        <p>9.599.000 VND</p>
+      </div>
+      <div id="nhom1" class="hinh2">
+        <a href="#">
+          <img src="41.jpg">
+        </a>
+        <h2>new</h2>
+        <a href="#" id="proname"><p>áo khoác trơn kaki</p></a>
+        <p>7.599.000 VND</p>
+      </div>
+    </div>
+      <div class="footer">
+        <div class="huongdan">
+          <ul> Hướng dẫn mua hàng
+            <li>Hướng dẫn mua hàng</li>
+            <li>Đặt hàng trực tuyến</li>
+            <li>Hình thức giao hàng</li>
+            <li>Phí vận chuyển</li>
+          </ul>
+        </div>
+        <div class="sub">
+          <ul>Theo dõi chúng tôi
+            <li>Bản tin</li>
+            <li>instagram</li>
+            <li>facebook</li>
+            <li>twitter</li>
+            <li>youtube</li>
+          </ul>
+        </div>
+        <div class="congty">
+          <ul>Công ty
+            <li>giới thiệu về chúng tôi</li>
+            <li>văn phòng</li>
+            <li>cửa hàng</li>
+            <li>liên hệ</li>
+          </ul>
+        </div>
+        <div class="chinhsach">
+          <ul>
+            Chính sách
+            <li>chính sách bảo mật</li>
+            <li>điều kiện mua hàng</li>
+          </ul>
+        </div>
+        <button onclick="hengio()" type="button" id="topbtn" class="kieu1"><i class="fas fa-arrow-up"></i></button>
+      </div>
+  </body>
+</html>

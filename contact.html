@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Inconsolata|Montserrat|Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mali|Roboto+Slab" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Liên hệ</title>
+    <script type="text/javascript">
+      function check() {
+        var t = document.form.name;
+        var e = document.form.email;
+        var m = document.form.message;
+        var check = true;
+        var maut=/[\w]/;
+        if (t.value.length==0 || maut.test(t.value)==false) {
+          t.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          t.style.border="none";
+          t.style.borderBottom="1px solid gray";
+        }
+        var mau2=/^[a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/;
+        if (mau2.test(e.value)==false) {
+          e.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          e.style.border="none";
+          e.style.borderBottom="1px solid gray";
+        }
+        if (m.value.length==0 && maut.test(m.value)==false) {
+          m.style.border="1px solid red";
+          check = false;
+        }
+        else {
+          m.style.border="none";
+          m.style.borderBottom="1px solid gray";
+        }
+        if (check==true) {
+          window.alert("Phản hồi của quý khách đã được gửi, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất! xin cảm ơn bạn đã lựa chọn A.ZY")
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="logo">
+      <h1><a href="project.html">A. Z Y</a></h1>
+    </div>
+    <div class="contact-title">
+      <h1>Xin chào bạn !</h1>
+      <h2>Chúng tôi luôn sẵn lòng phục vụ bạn.</h2>
+    </div>
+    <div class="contact-form">
+      <form name="form" id="contact-form" method="post">
+        <input type="text" name="name" class="form-control" placeholder="Tên của bạn" value=""> <br>
+        <input type="email" name="email" class="form-control" placeholder="Email của bạn" value=""> <br>
+        <textarea name="message" class="form-control" placeholder="Tin nhắn" rows="4"></textarea> <br>
+      </form>
+      <input type="submit" onclick="check()" class="submit" value="Gửi tin nhắn">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+*,html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb {
+    background: #95a5a6;
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7f8c8d;
+}
+.p1 {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: 200px;
+  max-height: 200px;
+  position: relative;
+}
+.logo {
+  font-family: 'Roboto Slab', serif;
+  word-spacing: 10px;
+  position: absolute;
+  left: 70px;
+  top: 30px;
+  z-index: 1000;
+}
+.logo a {
+  color: white;
+  font-size: 1.4em;
+}
+.welcome {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5.5em;
+  text-transform: uppercase;
+  color: white;
+  word-spacing: 20px;
+  letter-spacing: 7px;
+}
+.searchbox {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background:white;
+  height: 60px;
+  border-radius: 40px;
+  padding: 10px;
+}
+.searchbox:hover>.searchtext {
+  width: 400px;
+  padding: 0 6px;
+}
+.searchicon {
+  color:#2f3640;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.searchtext {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color:#2f3640;
+  font-size: 16px;
+  line-height: 40px;
+  transition: 0.4s;
+  width: 0px;
+}
+.user {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  z-index: 1000;
+}
+.headright {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 1.2em;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.middle {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  height: 400px;
+  z-index: 1000;
+}
+.middle li {
+  height: 50px;
+}
+#product:hover {
+  border-bottom: 5px solid #eb4d4b;
+}
+#product {
+  color:  white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: 'Roboto Mono', monospace;
+}
+.aboutme {
+  color: white;
+  background-color: black;
+  padding-top: 20px;
+  width: 100%;
+  height: 500px;
+}
+.huongdan {
+  font-family: 'Chakra Petch', sans-serif;
+  width: 20%;
+  float: left;
+  padding-left: 70px;
+}
+.huongdan ul {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.huongdan ul li {
+  padding-top: 40px;
+  height: 30px;
+  font-weight: normal;
+  font-size: 0.7em;
+}
+.join {
+  width:55%;
+  text-align: center;
+  float: left;
+}
+.join h1 {
+  font-family: 'Roboto Slab', serif;
+  height: 70px;
+}
+#email {
+  background: none;
+  border: none;
+  width: 210px;
+  border-bottom: 1px solid white;
+  height: 50px;
+  color: white;
+  text-align: center;
+  outline: none;
+}
+.check {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.check a {
+  color: white;
+  text-decoration: underline;
+}
+#submit {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  width: 80px;
+  height: 40px;
+  cursor: pointer;
+  outline: none;
+}
+.link {
+  margin-top: 130px;
+  width: 100%;
+  text-align:left;
+  padding-left: 100px;
+  float: left;
+  word-spacing: 100px;
+  font-size: 1.5em;
+  font-family: 'Chakra Petch', sans-serif;
+}
+.link a {
+  color: white;
+}
+.myself {
+  padding-right: 20px;
+  width: 25%;
+  float: left;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 50px;
+}
